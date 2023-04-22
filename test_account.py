@@ -7,8 +7,10 @@ class Test:
 
     def teardown_method(self):
         del self.a1
+
     def test_init(self):
         assert self.a1.get_name() == 'John'
+
     def test_deposit(self):
         # negative, zero, positive
         assert self.a1.deposit(-2.55) is False
@@ -19,6 +21,7 @@ class Test:
 
         assert self.a1.deposit(2.55) is True
         assert self.a1.get_balance() == 2.55
+
     def test_withdraw(self):
         # negative, zero, positive invalid, positive valid
         assert self.a1.withdraw(-2.5) is False
