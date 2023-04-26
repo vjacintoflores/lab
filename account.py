@@ -38,14 +38,18 @@ class Account:
         else:
             return False
 
-    def get_balance(self) -> None:
+    # get_name
+    # -0.5pts: Incorrect type hinting (refer to documentation notes)
+    def get_balance(self) -> float:
         """
         Method to access the account balance.
         :return: Account balance.
         """
         return self.__account_balance
 
-    def get_name(self) -> None:
+    # get_balance
+    # -0.5pts: Incorrect type hinting (refer to documentation notes)
+    def get_name(self) -> str:
         """
         Method to access th name associated with the account.
         :return: Person's name.

@@ -8,8 +8,11 @@ class Test:
     def teardown_method(self):
         del self.a1
 
+    # test_init
+    # -0.5pts: Missing test to check account balance
     def test_init(self):
         assert self.a1.get_name() == 'John'
+        assert self.a1.get_balance() == 0
 
     def test_deposit(self):
         # negative
