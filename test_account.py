@@ -1,5 +1,5 @@
-import pytest
 from account import *
+
 
 class Test:
     def setup_method(self):
@@ -34,7 +34,7 @@ class Test:
 
         # zero
         assert self.a1.withdraw(0) is False
-        assert self.a1.get_balance() ==0
+        assert self.a1.get_balance() == 0
 
         # positive invalid
         assert self.a1.withdraw(20) is False
@@ -47,4 +47,3 @@ class Test:
         # positive valid
         assert self.a1.withdraw(20) is True
         assert self.a1.get_balance() == 80
-

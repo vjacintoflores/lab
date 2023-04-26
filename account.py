@@ -2,18 +2,16 @@ class Account:
     """
     A class representing a person's bank account.
     """
-
-    def __init__(self, name:str) -> None:
+    def __init__(self, name: str) -> None:
         """
         Method to set default values for each account object.
         :param name: Person's name.
-        :param balance: Person's balance.
+        :param 0: Person's initial balance.
         """
-
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount:float) -> bool:
+    def deposit(self, amount: float) -> bool:
         """
         Method to increment a person's balance by the specified amount input.
         :param amount: how much to increment.
@@ -25,8 +23,7 @@ class Account:
         else:
             return False
 
-
-    def withdraw(self, amount:float) -> bool:
+    def withdraw(self, amount: float) -> bool:
         """
         Method to decrement the person's balance by the specified amount input.
         :param amount: how much to decrease from the balance.
